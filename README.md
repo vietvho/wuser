@@ -1,22 +1,22 @@
 # Wuser
 
-Wuser is a simple application use WP and React to fetch and display a table of use and the user details
+Wuser is a simple application that use WP and React to fetch and display a table of user and the user details
  
-After installing, it will create a default enpoint {yourdomain}/wuser. When you access this enpoint it will show all the user list. Click each list row for more user's details.
+After installation, it will create a default endpoint ```{yourdomain}/wuser```. When you access this endpoint, it will show the user list. Click each list row for showing the user's details.
 
 ## Installation
 
-Go to you ```/wp-content/plugins``` then clone this responsive or you could download the zip file and extract the wuser folder to ```/wp-content/plugins```.
+Go to your ```/wp-content/plugins``` then clone this responsive or you could download the zip file and extract the wuser folder to ```/wp-content/plugins```.
 
 ### Composer
 
-The composer are not requie for running the plugin and showing the user list, user details on the enpoint. 
-For Autotest use need to run "composer install" in the /wp-content/plugins/wuser
+The composer is not required to run the plugin and display the user list, user details on the endpoint. 
+For PHP Unit Test run ```composer install``` in the ```/wp-content/plugins/wuser``` directory
 
 ### Test
-Please making sure you you are in ```/wp-content/plugins/wuser``` and ran ```composer install```
-Run command below for testing:
 
+Please ensure that  you you are in ```/wp-content/plugins/wuser``` and ran ```composer install```
+To test,  run the following command:
 ```./vendor/bin/phpunit```
 
 ###  Frontend
