@@ -52,7 +52,6 @@ class Wrouter{
     
     function init() {
         add_filter( 'template_include', [__CLASS__,'wuser_register_template']);
-        add_filter('redirect_canonical', [__CLASS__,'wuser_disable_404_redirection']);
     }
 
     /**
@@ -94,29 +93,12 @@ class Wrouter{
         
         if (isset($wrouter[$current_request])) {
             add_filter( 'document_title_parts', [__CLASS__,'wuser_modify_404_page_title'] );
+            add_filter('redirect_canonical','__return_false');
             return  $wrouter[$current_request];
         }
         return $original_template;
     }
 
-     /**
-     * wuser_disable_404_redirection
-     *
-     * Defines disable 404 redirection for router
-     *
-     * @date	3/1/22
-     * @since	1.0
-     *
-     * @param	url $redirect_url the url input
-     * @return	url||false
-     */
-    function wuser_disable_404_redirection( $redirect_url ) {
-        global $wp;
-        if ( strpos( $wp->request, "wuser/" ) !== false ) {
-            return false;
-        }
-        return $redirect_url;
-    }
 }
 
 

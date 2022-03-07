@@ -33,6 +33,10 @@ class PluginTestCase extends \PHPUnit\Framework\TestCase {
 		Monkey\Functions\when( 'plugin_dir_path' )
 		->justReturn(PLUGIN_ABSPATH);
 
+		// return false
+		Monkey\Functions\when( '__return_false' )
+		->justReturn(false);
+
 		// A simple mock for `plugins_url` to return a sample URL
 		Monkey\Functions\when( 'plugins_url' )
 		->justReturn( 'http://pluginurl.warrennguyen' );
