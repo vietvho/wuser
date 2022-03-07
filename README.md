@@ -6,7 +6,7 @@ After installing, it will create a default enpoint {yourdomain}/wuser. When you 
 
 ## Installation
 
-Go to you /wp-content/plugins then clone this responsive or you could download the zip file and extract the wuser folder to /wp-content/plugins.
+Go to you ```/wp-content/plugins``` then clone this responsive or you could download the zip file and extract the wuser folder to ```/wp-content/plugins```.
 
 ### Composer
 
@@ -14,7 +14,7 @@ The composer are not requie for running the plugin and showing the user list, us
 For Autotest use need to run "composer install" in the /wp-content/plugins/wuser
 
 ### Test
-Please making sure you you are in /wp-content/plugins/wuser and ran "composer install" 
+Please making sure you you are in ```/wp-content/plugins/wuser``` and ran ```composer install```
 Run command below for testing:
 
 ```./vendor/bin/phpunit```
