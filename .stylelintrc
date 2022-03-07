@@ -1,0 +1,11 @@
+{
+    "extends": [
+        "stylelint-config-standard-scss",
+    ],
+    "rules": {
+        "scss/dollar-variable-pattern": null,
+        "indentation": "tab",
+        "no-eol-whitespace": null,
+        "selector-class-pattern": null
+    }
+}

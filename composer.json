@@ -1,0 +1,16 @@
+{
+    "name": "warren/wuser",
+    "description": "Simple user table using fetch",
+    "license": "inc",
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "Warren Nguyen - Viet Nguyen",
+            "email": "vnbillio@gmail.com"
+        }
+    ],
+    "require-dev": {
+        "brain/monkey": "^2.6",
+        "phpunit/phpunit": "^9.5"
+    }
+}

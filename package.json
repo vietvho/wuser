@@ -1,0 +1,23 @@
+{
+  "name": "wuser",
+  "version": "1.0.0",
+  "description": "The wuser Wordpress Plugin",
+  "main": "index.js",
+  "repository": "https://github.com/vietvho/wtodo",
+  "author": "warren nguyen",
+  "license": "ISC",
+  "private": true,
+  "dependencies": {
+    "@wordpress/scripts": "^22.0.1",
+    "@wordpress/stylelint-config": "^20.0.1",
+    "stylelint-config-standard-scss": "^3.0.0"
+  },
+  "scripts": {
+    "lint:cs": "wp-scripts lint-style src/**/*.scss --fix",
+    "lint:js": "wp-scripts lint-js --ext .js,.jsx src/ --fix",
+    "build": "wp-scripts build ./src/js/index.js ./src/sass/main.scss"
+  },
+  "devDependencies": {
+    "webpack-cli": "^4.9.2"
+  }
+}

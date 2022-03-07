@@ -1,0 +1,86 @@
+.c-table {
+	&--responsive {
+		width: 100%;
+		max-width: 1024px;
+		margin: 0 auto;
+		padding: 0;
+		border-collapse: collapse;
+		border-spacing: 0;
+		font-size: 18px;
+
+		thead {
+			visibility: hidden;
+			background: $grey-bg;
+			color: #fff;
+
+			@include mq($mq-mob,min) {
+				visibility: visible;
+			}
+		}
+		
+		tr {
+			padding: 5px;
+			margin-bottom: 10px;
+			display: block;
+
+			&:nth-child(even) td {
+				background: $light-grey-bg;
+			}
+
+			@include mq($mq-mob,min) {
+				display: table-row;
+				border-bottom-width: 1px;
+				margin-bottom: 0;
+			}
+		}
+
+		th,
+		td {
+			padding: 10px;
+			text-align: left;
+		}
+		
+		th {
+			text-transform: uppercase;
+			border-left: 0;
+			border-right: 0;
+		}
+			
+		td {
+			display: block;
+			text-align: right;
+			white-space: nowrap;
+			border: solid 1px $light-grey-border;
+			border-bottom-style: solid;
+			border-bottom-width: 1px;
+			border-bottom: 0;
+			
+			&:last-child {
+				border-bottom: 1px solid $light-grey-border;
+			}
+			
+			@include mq($mq-mob,min) {
+				display: table-cell;
+				text-align: left;
+				border-left: 0;
+				border-right: 0;
+			}
+		}
+			
+		td::before {
+			content: attr(data-label);
+			float: left;
+			text-transform: uppercase;
+			font-weight: bold;
+
+			@include mq($mq-mob,min) {
+				content: "";
+				display: none;
+			}
+		}
+	}
+
+	a:focus {
+		background-color: transparent !important;
+	}
+}
