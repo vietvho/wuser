@@ -16,14 +16,17 @@ For Autotest use need to run "composer install" in the /wp-content/plugins/wuser
 ### Test
 Please making sure you you are in /wp-content/plugins/wuser and ran "composer install" 
 Run command below for testing:
-..."./vendor/bin/phpunit"...
+
+```./vendor/bin/phpunit```
 
 ###  Frontend
 Yarn are required to compiler the css and js for the FrontEnd showing the results.
 Usally the yarn are install by simply 
-...npm install --global yarn...  [more details](https://classic.yarnpkg.com/lang/en/docs/install) 
+
+```npm install --global yarn```  [more details](https://classic.yarnpkg.com/lang/en/docs/install) 
 After yarn installed you could start to compline the css and js 
-...yarn build...
+
+```yarn build```
 
 ## License and Copyright
 
