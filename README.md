@@ -6,7 +6,7 @@ After installation, it will create a default endpoint ```{yourdomain}/wuser```. 
 
 ## Installation
 
-Go to your ```/wp-content/plugins``` then clone this responsive or you could download the zip file and extract the wuser folder to ```/wp-content/plugins```.
+Go to your ```/wp-content/plugins``` then clone this responsive or you could download the zip file and extract the wuser folder to ```/wp-content/plugins```. Active plugin in your CMS.
 
 ### Composer
 

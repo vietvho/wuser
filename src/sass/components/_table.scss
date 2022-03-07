@@ -2,19 +2,19 @@
 	&--responsive {
 		width: 100%;
 		max-width: 1024px;
-		margin: 0 auto;
+		margin: 30px auto;
 		padding: 0;
 		border-collapse: collapse;
 		border-spacing: 0;
 		font-size: 18px;
 
 		thead {
-			visibility: hidden;
+			display: none;
 			background: $grey-bg;
 			color: #fff;
 
 			@include mq($mq-mob,min) {
-				visibility: visible;
+				display: table-header-group;
 			}
 		}
 		
